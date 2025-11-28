@@ -1,28 +1,32 @@
 <html>
-    <head>
-        <title>Loop</title>
-        <style>
-            p {
-                text-decoration:underline;
-            }
-            h2 {
-                text-decoration:overline;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>JavaScript For Loop</h2>
-        <p id="mcsm"></p>
-        <script>
-            var characters = ["Jesse", "Ivor", "Romeo", "White Pumpkin", "Reuben", "Wither Storm"];
-            var text = "";
-            var i;
-            for (i = 0; i < characters.length; i++) {
-                text += characters[i] + "<br>";
-            }
-            document.getElementById("mcsm").innerHTML = text;
-        </script>
-        <marquee scrollamount="4" direction="right">
-        <img src="https://th.bing.com/th/id/OIP.6dNu105uEc-jaFoqiTHzhwHaEK?w=318&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">
-    </body>
+<body>
+    <p id="beeswarm"></p>
+    <script>
+        var bees;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Spicy Bee!";
+                break;
+            case 1:
+                day = "Fuzzy Bee!";
+                break;
+            case 2:
+                day = "Buoyant Bee!";
+                break;
+            case 3:
+                day = "Vector Bee!";
+                break;
+            case 4:
+                day = "Tadpole Bee!";
+                break;
+            case 5:
+                day = " Precise Bee!";
+                break;
+            case 6:
+                day = "Windy Bee!";
+                break;
+        }
+        document.getElementById("beeswarm").innerHTML = "You got..." + day;
+    </script>
+</body>
 </html>
